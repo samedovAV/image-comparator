@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head><title>Home Page</title></head>
+<body>
+<h1>Hello !</h1>
+<p>Welcome to Our App</p>
+<form th:action="@{/compare}"
+      th:object="${imagesDto}" method="POST">
+    First image:
+    <input type="text" th:field="*{firstImage}" />
+    <br/>
+    Second image:
+    <input type="text" th:field="*{secondImage}" />
+    <br/>
+    <input type="submit" value="Compare images" />
+</form>
+<br/>
+<div th:text="${result}"
+     style="color:#ff0000;font-style:italic;">
+</div>
+</body>
+</html>
