@@ -1,6 +1,5 @@
 package ru.samedov.imagecomparator.controller;
 
-import lombok.RequiredArgsConstructor;
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,11 +8,9 @@ import ru.samedov.imagecomparator.dto.ImagesDto;
 import ru.samedov.imagecomparator.service.ComparatorService;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.util.Arrays;
 
 
 @Controller
